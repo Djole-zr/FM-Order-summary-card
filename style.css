@@ -1,36 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Pale blue: hsl(225, 100%, 94%)
-- Bright blue: hsl(245, 75%, 52%)
-
-### Neutral
-
-- Very pale blue: hsl(225, 100%, 98%)
-- Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
-- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
-- Weights: 500, 700, 900 */
-
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -145,7 +112,7 @@ p {
     display: block;
     background-color: var(--bright-blue);
     width: 100%;
-    padding: 1.5rem 10.2rem;
+    padding: 1.5rem 0;
     box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
     border-radius: 1.1rem;
     color: hsl(0, 0%, 100%);
@@ -156,13 +123,12 @@ p {
 
 .btn-payment:hover {
     background: #766CF1;
-    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
 }
 
 .btn-cancel {
     display: block;
     color: var(--desaturated-blue);
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 900;
     width: 100%;
 }
@@ -183,4 +149,52 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 42em) {    
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    
+    .card {
+        width: 32.7rem;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    }
+    
+    .content {
+        padding: 3.2rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.6rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin-bottom: 2.4rem;
+    }
+    
+    .summary {
+        margin-bottom: 2.4rem;
+        padding: 1.7rem 1.6rem 1.6rem;
+    }
+    
+    .order h2 {
+        font-size: 1.4rem;
+    }
+    
+    .order span {
+        font-size: 1.4rem;
+    }
+    
+    .btn-change {
+        font-size: 1.3rem;
+    }
+    
+    .btn-payment {
+        margin-bottom: 2.4rem;
+    }
 }
